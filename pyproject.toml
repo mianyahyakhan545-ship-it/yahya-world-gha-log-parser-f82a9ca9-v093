@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gha-log-parser"
+version = "1.0.0"
+description = "Parse GitHub Actions run logs into structured CI failure JSON"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "YAHYA World Worker"}]
+dependencies = []
+
+[project.scripts]
+gha-log-parser = "gha_log_parser.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pylint.main]
+py-version = "3.11"
+source-roots = ["src"]
+
+[tool.pylint.format]
+max-line-length = 100
+
+[tool.pylint.messages_control]
+disable = ["too-few-public-methods"]
