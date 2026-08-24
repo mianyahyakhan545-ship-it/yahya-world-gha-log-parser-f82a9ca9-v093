@@ -1,0 +1,7 @@
+{
+  "compileall": "PASS",
+  "public_type_hints": "PASS",
+  "pylint_target": ">=8.0",
+  "runtime_dependencies": "stdlib-only",
+  "tests_passed": 12
+}
